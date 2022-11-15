@@ -1,2 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-/* font-family: 'Open Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap&#39;");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main,
+main > section {
+  display: flex;
+  flex-direction: column;
+}
+
+details {
+  display: none;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (min-width: 200px) {
+  nav {
+    padding: 10% 0;
+  }
+  nav ul {
+    display: none;
+  }
+  nav > section {
+    border-top: 1px solid #909090;
+    border-bottom: 1px solid #909090;
+    height: 5vh;
+  }
+  nav > article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 5vh;
+         column-gap: 5vh;
+    padding-bottom: 10%;
+  }
+  nav i {
+    font-size: 60px;
+  }
+  nav h1 {
+    font-size: 50px;
+    font-weight: 300;
+    width: 30%;
+    text-transform: uppercase;
+  }
+  header {
+    position: relative;
+    height: 70vh;
+  }
+  header article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2vh;
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  header h1 {
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 50px;
+  }
+  header p {
+    font-size: 14px;
+  }
+  .features {
+    color: #5f5f5f;
+    row-gap: 6vh;
+    padding: 5%;
+  }
+  .features > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4vh;
+  }
+  .features article {
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    row-gap: 0;
+  }
+  .features aside {
+    display: flex;
+    flex-direction: column;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 3vh;
+  }
+  .features h3 {
+    font-size: 28px;
+  }
+  .features i {
+    font-weight: 700;
+    font-size: 76px;
+  }
+}/*# sourceMappingURL=style.css.map */
