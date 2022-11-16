@@ -50,7 +50,7 @@ p {
   nav > section {
     border-top: 1px solid #909090;
     border-bottom: 1px solid #909090;
-    height: 5vh;
+    height: 6vh;
   }
   nav > article {
     display: flex;
@@ -349,5 +349,70 @@ p {
     -moz-column-gap: 0;
          column-gap: 0;
     row-gap: 0;
+  }
+}
+@media (min-width: 600px) {
+  nav details {
+    display: none;
+  }
+  nav > section {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 5vh;
+         column-gap: 5vh;
+    row-gap: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 6;
+  }
+  nav ul {
+    width: 70%;
+    display: flex;
+    flex-direction: none;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+    row-gap: 0;
+  }
+  nav li {
+    display: flex;
+    width: 100%;
+  }
+  nav a {
+    width: 100%;
+    padding: 1.5vh 1vh;
+    text-align: center;
+    text-transform: capitalize;
+    color: #5f5f5f;
+    transition: 0.3s;
+  }
+  nav a:hover {
+    background-color: gainsboro;
+    color: #108ac1;
+  }
+  .features,
+.activities figure {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  .features > section,
+.activities img {
+    width: 40%;
+  }
+  .activities figcaption {
+    width: 50%;
+  }
+  .company img {
+    width: 50%;
+  }
+  .company aside > a:hover {
+    background-color: gainsboro;
   }
 }/*# sourceMappingURL=style.css.map */
